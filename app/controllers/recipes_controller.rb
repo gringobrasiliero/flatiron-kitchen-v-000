@@ -7,4 +7,11 @@ class RecipesController < ApplicationController
   def edit
 
   end
+
+  private
+
+  def recipe_params
+
+  end
+  
 end
