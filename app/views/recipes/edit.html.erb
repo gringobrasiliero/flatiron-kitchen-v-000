@@ -3,6 +3,6 @@
 <id="form#new_recipe">
   <%= form_for @recipe do |f| %>
     <%= render partial: 'recipe', locals: {f: f, recipe: @recipe} %>
-    <%= f.submit 'Create Recipe' %>
+    <%= f.submit 'Update Recipe' %>
   <% end %>
 </id>
