@@ -1,6 +1,6 @@
 class IngredientsController < ApplicationController
 
-def new
+def create
 
 end
 
