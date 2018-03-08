@@ -15,7 +15,7 @@ end
 end
 
 def edit
-
+  @ingredient = Ingredient.find(params[:id])
 end
 
 def show
