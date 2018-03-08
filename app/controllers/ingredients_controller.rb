@@ -7,7 +7,7 @@ end
 
 def create
 @ingredient = Ingredient.create(ingredient_params)
-redirect_to new_ingredient_path
+redirect_to ingredient_path(@ingredient.id)
 end
 
 def edit
