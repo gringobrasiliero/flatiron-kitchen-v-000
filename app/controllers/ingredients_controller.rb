@@ -18,6 +18,10 @@ def edit
 
 end
 
+def show
+  @recipe = Recipe.find(params[:id])
+end
+
 private
 
 def ingredient_params
