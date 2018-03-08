@@ -7,6 +7,13 @@ class RecipesController < ApplicationController
 
   def create
     @recipe = Recipe.create(recipe_params)
+    @recipe = Ingredient.create(ingredient_params)
+    if @recipe.save
+      redirect_to recipe_path(@recipe.id)
+    else
+      render 'new'
+    end
+
   end
 
   def edit
