@@ -1,5 +1,10 @@
 class RecipesController < ApplicationController
 
+  def new
+    @recipe = Recipe.new
+    @recipe = Recipe.all
+  end
+
   def create
     @recipe = Recipe.create(recipe_params)
   end
