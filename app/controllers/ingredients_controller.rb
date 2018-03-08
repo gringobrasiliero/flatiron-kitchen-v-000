@@ -1,7 +1,7 @@
 class IngredientsController < ApplicationController
 
 def create
-@ingredient = Ingredient.create(post_params)
+@ingredient = Ingredient.create(ingredient_params)
 end
 
 def edit
