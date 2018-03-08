@@ -7,7 +7,11 @@ end
 
 def create
 @ingredient = Ingredient.create(ingredient_params)
-redirect_to ingredient_path(@ingredient.id)
+if @ingredient.save
+  redirect_to ingredient_path(@ingredient.id)
+else
+  render 'new'
+end
 end
 
 def edit
