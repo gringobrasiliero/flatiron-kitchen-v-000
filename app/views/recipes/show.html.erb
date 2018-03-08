@@ -1,6 +1,6 @@
 <% @recipe.name %>
 <ul>
-<% @recipes.ingredient.each do |ingredient| %>
+<% @recipes.ingredients.each do |ingredient| %>
 <li><%= link_to ingredient.name, ingredient %></li>
 <%end%>
 </ul>
